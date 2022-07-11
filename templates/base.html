@@ -14,15 +14,61 @@
             <img  class = "logo" src="{{ url_for('static', filename='img/snake-skull.gif') }}" alt="logo" title="LOGO1">
             <img  class = "logo1" src="{{ url_for('static', filename='img/co_uk3.gif') }}" alt="logo1" title="Bigest-Metal-Events.co.uk">
             <img  class = "logo2" src="{{ url_for('static', filename='img/snake-skull.gif') }}" alt="logo2" title="LOGO2">
+            <img  class = "logo3" src="{{ url_for('static', filename='img/co_uk_mob.gif') }}" alt="logo3" title="BME">
+        </div>
+        <div class="bme_co_uk">
+        <h3 class="text_bme">Biggest-Metal-Events.co.uk</h3>
         </div>
     <br>
     <div>
         <img  class = "bands" src="{{ url_for('static', filename='img/bands.png') }}" alt="bands" title="bands photo">
     </div>
     </header>
+    <div class="navbar">
+        <a href="{{ url_for('my_view.index')}}">Home</a>
+        <a href="{{ url_for('my_view.events')}}">Events</a>
+        <a href="{{ url_for('my_view.contactus')}}">Contact Us</a>
+        <div class="dropdown">
+        <button class="dropbtn">Bands &#128071
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="header">
+            <h2>Bands</h2>
+            </div>
+            <div class="row">
+            <div class="column">
+                <a href="#">Placebo</a>
+                <a href="#">Limp bizkit</a>
+                <a href="#">Disturbed</a>
+                <a href="#">My Chamical Romance</a>
+                <a href="#">Corey Taylor</a>
+            </div>
+            <div class="column">
+                <a href="#">Slipknot</a>
+                <a href="#">RHCP</a>
+                <a href="#">KoЯn</a>
+                <a href="#">Ville Valo (HIM)</a>
+                <a href="#">Trivium</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> 
     <div class="dark_mode">
         <button class="dark_button" onclick= darkMode(),checkCookies()><img  class = "dark_text" src="{{ url_for('static', filename='img/dark_button.gif') }}" alt="dark mode" title="dark mode"></button>
     </div>
-    
+    <div class="dark_mode_mob">
+        <button class="dark_button_mob" onclick= darkMode(),checkCookies()><img class= "dm" src="{{ url_for('static', filename='img/dm.jpg') }}" alt="dark mode mob" title="dark mode mob"></button>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+        <img  class = "bands" src="{{ url_for('static', filename='img/footer.png') }}" alt="bands" title="bands photo">
+        <div class="footer-text">
+            <h3>© 2022. Anastasija</h3>
+            <h3> This site is for Code Nation. Educational and training purposes only!!!</h3>
+        </div>
+        </footer>
 </body>
 </html>
