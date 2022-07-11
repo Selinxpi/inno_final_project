@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <script src="{{url_for('static', filename = 'app.js')}}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal-Bands-Events</title>
+</head>
+<body onload="darkCheck(),checkCookies()">
+    <header>
+        <div class = "header">
+            <img  class = "logo" src="{{ url_for('static', filename='img/snake-skull.gif') }}" alt="logo" title="LOGO1">
+            <img  class = "logo1" src="{{ url_for('static', filename='img/co_uk3.gif') }}" alt="logo1" title="Bigest-Metal-Events.co.uk">
+            <img  class = "logo2" src="{{ url_for('static', filename='img/snake-skull.gif') }}" alt="logo2" title="LOGO2">
+        </div>
+    <br>
+    <div>
+        <img  class = "bands" src="{{ url_for('static', filename='img/bands.png') }}" alt="bands" title="bands photo">
+    </div>
+    </header>
+    <div class="dark_mode">
+        <button class="dark_button" onclick= darkMode(),checkCookies()><img  class = "dark_text" src="{{ url_for('static', filename='img/dark_button.gif') }}" alt="dark mode" title="dark mode"></button>
+    </div>
+    
+</body>
+</html>
