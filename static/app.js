@@ -81,22 +81,11 @@ function myFunction6() {
     }
 }
 
-// function myFunction6() {
-
-//     $(document).ready(function() {
-//     $('.form-box1,.form-box2,.form-box3').hide();
-//     });
-
-
-//     $("#hide-text").click(function() {
-//         $(".form-box1").show();
-//     });
-
-//     $("#hide-text2").click(function() {
-//         $(".form-box2").show();
-//     });
-
-//     $("#hide-text3").click(function() {
-//         $(".form-box3").show();
-//     });
-// };
+function myFunction7() {
+    var x = document.getElementById("hide_6");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    } else {
+    x.style.display = "none";
+    }
+}
