@@ -73,7 +73,7 @@ body{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     margin-top: 1em;
 }
 .logo{
@@ -218,7 +218,7 @@ body{
 /* Home page Welcome text and footer*/
 .welcome_text{
     text-align: center;
-    margin-top: 5em;
+    margin-top: 2.5em;
     font-size: 2em;
 }
 
