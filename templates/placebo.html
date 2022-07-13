@@ -1,4 +1,101 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Placebo</h1>
-{% endblock %}
+    <h1 class="bands_name">PLACEBO</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/placebo.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">Placebo are a British rock band, formed in London in 1994 
+            by vocalist–guitarist Brian Molko and bassist–guitarist Stefan Olsdal. 
+            Drummer Robert Schultzberg joined in late 1994, 
+            but left in 1996 shortly after the release of the band's eponymous debut album due to conflicts with Molko, 
+            and was replaced the same year by Steve Hewitt.
+            Following the release of a demo, a split single, and their eponymous debut album, 
+            Placebo gained exposure in 1997 after the single "Nancy Boy" 
+            became popular in the UK, a song notorious at the time for its gender-bending content. 
+            The band stood out amongst the Britpop scene they were associated with at the time for their androgynous appearance and musical content,
+            and lyrics which openly discussed sexuality, mental health, and drug use. 
+            </p>
+            <div class="web_button">
+                <a href="https://www.placeboworld.co.uk" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/brian-molko.gif') }}" alt="Brian Molko" title="Brian Molko">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Brian Molko</p>
+                <p class="p-bands">Brian Molko (born 10 December 1972) is a Belgian-born Scottish-American musician and songwriter. 
+                He is best known as the lead vocalist, guitarist, and lyricist of the band Placebo. 
+                He is known in particular for his distinctive nasal, high-pitched vocals, previously feminine/androgynous appearance, 
+                aggressive guitar style, and unique tunings.Molko and Placebo co-founder Stefan Olsdal had both attended the American 
+                International School of Luxembourg (AISL), they had not been friends. When Molko was living in London, he ran into 
+                Olsdal at South Kensington tube station and invited him to one of his gigs he played with Steve Hewitt in a group called Ashtray Heart.
+                Along with Hewitt and Olsdal, Molko had a role in the 1998 film Velvet Goldmine, for which Placebo performed the T. 
+                Rex song "20th Century Boy". He played Malcolm, a singer of the fictional glam rock band, "The Flaming Creatures", who resembled the early Alice Cooper band.
+                During Placebo's live performances Molko has played a number of instruments, including guitar, bass guitar, keyboards, harmonica and saxophone.  
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Brian_Molko" target="_blank" alt="brian"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Brian Molko"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/Stefan.png') }}" alt="Stefan" title="Stefan">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Stefan Olsdal</p>
+                <p class="p-bands">Olsdal was born in Gothenburg, Sweden. His family moved to Luxembourg when he was young and went 
+                to the American International School of Luxembourg along with fellow band member Brian Molko 
+                (though the two did not cross paths at this time). Olsdal began playing music in his school's orchestra in 1987. 
+                He completed his high school education in Sweden and moved to London in 1993, where he attended the Musicians Institute.
+                He is openly gay. He came out publicly in an interview in Melody Maker in 1996. Olsdal and his partner David Amen have a son.
+                In 2013, he mixed the EP "El Encanto" of Lantana and produced two of the songs of the album, also playing some of the synthesisers, bass and guitars. 
+                He also did a lot of the programming for the album.
+                In 2016 Olsdal produced 'La Chica Con Los Ojos Dorados', and the Fangoria album "Canciones Para Robots Romanticos" as well as the release of the debut album 
+                "Inside" from his band Digital 21 + Stefan Olsdal.
+                He has worked as producer, arranger, musician and mixer on an LP by Lantana.
+                In 2018, Olsdal revealed on his official Facebook page that he had applied to become a British citizen. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Stefan_Olsdal" target="_blank" alt="Stefan"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Stefan"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">VIDEOS</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="video">
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/sRYLFVOY1RI?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/KudGpbfWYrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/u9LGq7Q2uS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/W5CAvqfWsAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/nIJ8DogiIiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/-JJAXwAaA2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/HClZwFNNMKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/e7bxXjQL3cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/a4JhtoR39M0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</article>
+    {% endblock %}

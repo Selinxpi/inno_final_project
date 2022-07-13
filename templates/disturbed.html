@@ -1,4 +1,151 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Disturbed</h1>
-{% endblock %}
+    <h1 class="bands_name">Disturbed</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/disturbed.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                Disturbed is an American heavy metal band from Chicago, formed in 1994. 
+                The band includes vocalist David Draiman, guitarist/keyboardist Dan Donegan, 
+                bassist John Moyer, and drummer Mike Wengren. 
+                Donegan and Wengren have been involved in the band since its inception, 
+                with Moyer replacing former bassist Steve "Fuzz" Kmak and Draiman replacing original lead vocalist Erich Awalt.
+                The band has released seven studio albums, five of which have consecutively debuted at number one on the Billboard 200.
+                Disturbed went into hiatus in October 2011, during which the band's members focused on various side projects, 
+                and returned in June 2015, releasing their first album in four years, Immortalized in August 2015. 
+                They also released two live albums, Music as a Weapon II in February 2004 and Disturbed: Live at Red Rocks in November 2016.
+                Disturbed has sold over 17 million records worldwide, 
+                making them one of the most successful rock bands in the modern era[clarification needed] alongside Slipknot and Godsmack, among others.
+            </p>
+            <div class="web_button">
+                <a href="https://www.disturbed1.com/" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/Draiman.jpg') }}" alt="Draiman" title="Draiman">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">David Michael Draiman</p>
+                <p class="p-bands">
+                    David Michael Draiman (born March 13, 1973) is an American singer and songwriter. 
+                    Noted for his distorted, operatic, baritone voice and percussive singing style, 
+                    he is best known as the lead vocalist of the heavy metal band Disturbed since 1996.
+                    He has written some of the band's most successful singles, such as "Stupify", 
+                    "Down with the Sickness", "Indestructible", and "Inside the Fire". In 2006, 
+                    he was ranked at No. 42 on the Hit Parader list of "Top 100 Metal Vocalists of All Time". 
+                    During Disturbed's hiatus from 2011 to 2015, he worked on an industrial metal project with Geno Lenardo, which was later named Device. 
+                    They released one self-titled album in 2013. Disturbed returned with the album Immortalized in 2015 and Evolution in 2018. 
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/David_Draiman" target="_blank" alt="David"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="David"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/daniel.jpg') }}" alt="Daniel" title="Daniel">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Daniel Joseph Donegan</p>
+                <p class="p-bands">
+                    Daniel Joseph Donegan (born August 1, 1968) is an American musician and record producer who serves as the guitarist and keyboardist for heavy metal band Disturbed.
+                    Donegan began playing guitar as a teenager and eventually formed a band called Vandal, which was a 1980s-style glam metal band. 
+                    He also played with some of the members of Vandal in another band that was called Loudmouth, and has pursued a side project band, 
+                    Fight or Flight, in collaboration with Disturbed band member Mike Wengren.
+                    Donegan was added to the guitar show Chop Shop's list of "Top 100 Most Complete Guitar Players of All Time" at number 76.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Dan_Donegan" target="_blank" alt="Daniel"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Daniel"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/john.jpg') }}" alt="John" title="John">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">John Moyer</p>
+                <p class="p-bands">
+                    (born November 30, 1973) is an American musician, best known as the bassist and backing vocalist for the heavy metal band Disturbed. 
+                    Taking over in 2004 after Steve "Fuzz" Kmak was fired, Moyer has played bass guitar with the group since their third studio album, Ten Thousand Fists, 
+                    which he played on as a session member, becoming a full-time member around 2005 during the supporting tour for the album. Moyer was also the bassist for the American supergroup Adrenaline Mob, joining in February 2012, and remained with the band until August 2014. 
+                    He currently plays in Stereo Satellite, Art of Anarchy, and in 2015 he became a full-time member of the band Operation: Mindcrime. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/John_Moyer" target="_blank" alt="John"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="John"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/mike.gif') }}" alt="Daniel" title="Mike">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Mike Wengren</p>
+                <p class="p-bands">
+                    (born September 3, 1971) is an American drummer, best known for his work with heavy metal band Disturbed. 
+                    He is one of the founding members of the band, which was formed in 1994. 
+                    Wengren is known for his bass drum techniques that have become a staple of Disturbed's music. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Mike_Wengren" target="_blank" alt="Mike"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Mike"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>David Drainman Of Disturbed — Forsaken</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/David Drainman Of Disturbed — Forsaken.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Decadance</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Decadance.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Down With The Sickness</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Down With The Sickness.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Guarded</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Guarded.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Indestructible</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Indestructible.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Inside The Fire</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Inside The Fire.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Disturbed — Asylum</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/disturbed/Disturbed — Asylum.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

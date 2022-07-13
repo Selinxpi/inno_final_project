@@ -1,4 +1,150 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>LB</h1>
-{% endblock %}
+    <h1 class="bands_name">Limp Bizkit</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/LB.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                Limp Bizkit is an American rap rock band from Jacksonville, Florida. 
+                Its lineup consists of Fred Durst (lead vocals), Sam Rivers (bass, backing vocals), 
+                John Otto (drums, percussion), DJ Lethal (turntables), and Wes Borland (guitars, vocals). 
+                The band's music is marked by Durst's angry vocal delivery and Borland's sonic experimentation. 
+                Borland's elaborate visual appearance, which includes face and body paint, masks and uniforms, 
+                also plays a large role in Limp Bizkit's live shows. The band has been nominated for three Grammy Awards.
+                The band has released 26 singles. The band was formed in 1994.
+            </p>
+            <div class="web_button">
+                <a href="https://limpbizkit.com/" target="_blank" alt="web"><button class="web">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/fred.gif') }}" alt="Fred" title="Fred">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Fred Durst</p>
+                <p class="p-bands">William Frederick Durst (born Frederick Allen Mayne III; August 20, 1970) 
+                    is an American rapper, singer, songwriter, actor, and film director. 
+                    He is best known as the frontman and lyricist of the nu metal band Limp Bizkit, 
+                    formed in 1994, with whom he has released six studio albums.  
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Fred_Durst" target="_blank" alt="Fred"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Fred"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/jhon.jpg') }}" alt="john" title="john">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">John Otto (drummer)</p>
+                <p class="p-bands">
+                    John Everett Otto (born March 22, 1977) is an American musician best known as the drummer 
+                    and founding member of American rap rock band Limp Bizkit.
+                    Modern Drummer reported that Otto's playing is "grounded in metal, jazz, 
+                    and hip-hop fireball rhythms are the grease that makes the Bizkit cook.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/John_Otto_(drummer)" target="_blank" alt="john"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="john"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/sam.jpg') }}" alt="sam" title="sam">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Samuel Robert Rivers</p>
+                <p class="p-bands">Samuel Robert Rivers (born September 2, 1977, Jacksonville, Florida) is the bassist and backing vocalist of the band Limp Bizkit, and one of its founding members.  
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Sam_Rivers_(bassist)" target="_blank" alt="sam"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="sam"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/wes.jpg') }}" alt="Wes" title="Wes">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Wes Borland</p>
+                <p class="p-bands">
+                    Wesley Louden Borland (born February 7, 1975) is an American rock musician. 
+                    He is best known as the current guitarist and backing vocalist of the rap metal band Limp Bizkit, 
+                    the lead vocalist and guitarist of the alternative and industrial rock band Black Light Burns, 
+                    and the co-founder of experimental metal band Big Dumb Face. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Wes_Borland" target="_blank" alt="wes"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Wes"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/dj.jpg') }}" alt="DJ Lethal" title="DJ Lethal">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">DJ Lethal</p>
+                <p class="p-bands">Leor Dimant better known as DJ Lethal, is a Latvian-American turntablist and producer and is best known as a member of the groups House of Pain and Limp Bizkit.  
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/DJ_Lethal" target="_blank" alt="DJ Lethal"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="DJ Lethal"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Limp Bizkit — Behind Blue Eyes</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Behind Blue Eyes.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — Boiler</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Boiler.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — Lonely World</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Lonely World.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — My Way</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — My Way.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — Rollin' (Air Raid Vehicle)</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Rollin.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — Take A Look Around</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Take A Look Around.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Limp Bizkit — Nookie</h5>
+            <audio controls autoplay>
+                <source src="{{ url_for('static', filename='mp3/lb/Limp Bizkit — Nookie.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

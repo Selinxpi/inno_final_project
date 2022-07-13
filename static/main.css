@@ -60,7 +60,7 @@ body{
         text-shadow: 0 0 20px #fff, 0 0 30px #1db28d, 0 0 40px #19c89f, 0 0 50px #0e8074, 0 0 60px #0b3295, 0 0 70px #085e1f, 0 0 80px #00f2ff;
     }
 }
-.text_bme, .welcome, .event-text, .h1{
+.text_bme, .welcome, .event-text, .h1,.bands_name{
     color: rgb(255, 255, 255);
     text-align: center;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -257,7 +257,7 @@ body{
     width: 7em;
     height: 3em;
     margin-left: 3em;
-    margin-top: 5em;
+    margin-top: 3em;
     border-radius: 1em;
     background: linear-gradient(90deg,#363637,#9ea2a9,#929498,#49494a);
     box-shadow: 0 1em 0.5em rgba(37, 37, 39, 0.725);
@@ -345,4 +345,90 @@ body{
 .e-mail{
     font-size: 1.1em;
     text-align: center;
+}
+/* bands */
+.bands_name{
+    margin-top: 1.3em;
+    font-size: 4em;
+    margin-bottom: 0.3em;
+}
+.band{
+    display: flex;
+    justify-content: center;
+}
+.logo-band{
+    width: 14em;
+    border: double rgb(72, 71, 71) 0.5em;
+    border-radius: 10em;
+    margin-top: 1em;
+}
+.history{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    padding-right: 2em;
+}
+.box_history {
+    padding: 1em;
+    width: 50em;
+    border-radius: 0.5em;
+    background-color: rgba(68, 67, 67, 0.684);
+    border: double rgb(72, 71, 71) 0.5em;
+}
+h4{
+    text-align: center;
+}
+.member-foto{
+    display: flex;
+    justify-content: center;
+    width: 8em;
+    border-radius: 2em;
+    border: solid rgb(72, 71, 71) 0.2em;
+    margin-top: 1em;
+}
+.member-p{
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1em;
+}
+.p-bands{
+    text-align: center;
+}
+.web_button{
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+}
+.wikipedia{
+    width: 3em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+.wiki-text{
+    font-size: 0.7em;
+}
+.b-b{
+    margin-bottom: 2em;
+}
+.div_video{
+    padding-right: 0.2em;
+    border-radius: 3em;
+    background-color: rgba(22, 95, 98, 0.282);
+    border: double rgb(72, 71, 71) 0.5em;
+    margin-bottom: 4em;
+}
+.video{
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.audio{
+    text-align: center;
+    margin-bottom: 1em;
+}
+h5{
+    margin-top: 2em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
 }
