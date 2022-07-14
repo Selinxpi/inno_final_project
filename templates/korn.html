@@ -1,4 +1,173 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>KoRn</h1>
-{% endblock %}
+    <h1 class="bands_name">KoЯn</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/korn.png') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                Korn (stylized as KoЯn, or occasionally KoRn) is an American nu metal band from Bakersfield, California, formed in 1993. 
+                The band is notable for pioneering the nu metal genre and bringing it into the mainstream.
+                Originally formed in 1993 by three members of the band L.A.P.D., Korn's current lineup features founding members James "Munky" Shaffer (guitar), 
+                Reginald "Fieldy" Arvizu (bass), Brian "Head" Welch (guitar, backing vocals), and Jonathan Davis (lead vocals, bagpipes), with the addition of Ray Luzier (drums) in 2007, replacing the band's first drummer, David Silveria.
+                Korn made a demo tape, Neidermayer's Mind, in 1993, which was distributed free to record companies and on request to members of the public.
+                Their debut album, Korn, was released in 1994, followed by Life Is Peachy in 1996. The band first experienced mainstream success with Follow the Leader (1998) and Issues (1999), both of which debuted at number one on the Billboard 200.
+                The band's mainstream success continued with Untouchables (2002), Take a Look in the Mirror (2003) and See You on the Other Side (2005).
+                A compilation album, Greatest Hits Vol. 1, was released in 2004, spanning a decade of singles and concluding the band's recording contract with Immortal Records and Epic Records. 
+                They signed to Virgin Records, releasing See You on the Other Side in 2005, and an untitled album in 2007. Korn's other recent albums, Korn III: Remember Who You Are (2010) and The Path of Totality (2011), 
+                were released via Roadrunner Records, with The Paradigm Shift (2013) being released via Prospect Park and Caroline Records. The Serenity of Suffering saw their return to Roadrunner Records, 
+                through which The Nothing was released on September 13, 2019. 
+                Their latest album Requiem was released via Loma Vista Recordings on February 4, 2022. 
+            </p>
+            <div class="web_button">
+                <a href="https://kornofficial.com/" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/davis.jpg') }}" alt="Jonathan" title="Jonathan">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Jonathan Davis</p>
+                <p class="p-bands">
+                    Jonathan Howsmon Davis (born January 18, 1971), also known as JD, or JDevil, is an American singer, songwriter, and musician. 
+                    He is best known as the lead vocalist and frontman of nu metal band Korn, who are considered a pioneering act of the nu metal genre.
+                    Davis' distinctive personality and Korn's music influenced a generation of musicians and performers who have come after them.
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Jonathan_Davis" target="_blank" alt="Jonathan"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Jonathan"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/munky.jpg') }}" alt="James" title="James">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">James Shaffer</p>
+                <p class="p-bands">
+                    James Christian Shaffer (born June 6, 1970), also known by his stage name "Munky", is an American musician best known as co-founder and guitarist of the nu metal band Korn.
+                    Shaffer set up the side-project band Fear and the Nervous System in 2008 and is also the founder of Emotional Syphon Recordings, who have signed acts like Monster in the Machine and Droid.
+                    Shaffer was ranked at No. 26 of Guitar World's 100 Greatest Heavy Metal Guitarists of All Time.
+                    Shaffer's work with Korn has resulted in over 40 million albums sold. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/James_Shaffer" target="_blank" alt="James"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="James"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/head.jpg') }}" alt="Brian" title="Brian">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Brian Welch</p>
+                <p class="p-bands">
+                    Brian Philip Welch (born June 19, 1970), also known by his stage name Head, 
+                    is an American musician, singer and songwriter. He is one of the guitarists and founding member 
+                    of the nu metal band Korn[4] and his solo project Love and Death. Along with fellow Korn 
+                    guitarist James "Munky" Shaffer, Welch helped develop Korn's distinctive sound,
+                    a mix of sirenlike shards of dissonant guitar that mimicked a turntablist's various effects and 
+                    rumbling down-tuned riffing, that defined the nu metal aesthetic beginning in the mid-'90s.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Brian_Welch" target="_blank" alt="Brian"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Brian"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/regi.jpg') }}" alt="Reginald" title="Reginald">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Reginald Arvizu</p>
+                <p class="p-bands">
+                    Reginald Quincy Arvizu (born November 2, 1969),also known as "Fieldy", 
+                    is an American musician, best known as the bassist for nu metal band Korn. 
+                    He is also the guitarist/bassist for rock band StillWell. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Reginald_Arvizu" target="_blank" alt="Reginald"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Reginald"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/raykorn.jpg') }}" alt="Ray" title="Ray">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Ray Luzier</p>
+                <p class="p-bands">
+                    Raymond Lee Luzier (born June 14, 1970) is an American musician. 
+                    He is the drummer of nu metal band Korn, 
+                    having become a full-time member of the band in April 2009.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Ray_Luzier" target="_blank" alt="Ray"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Ray"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Korn - A.D.I.D.A.S.</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn – A.D.I.D.A.S.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn — Coming Undone</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn — Coming Undone.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn - Freak On a Leash</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn – Freak On a Leash.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn - Got the Life</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn - Got the Life.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn — Narcissistic Cannibal</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn — Narcissistic Cannibal.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn — Never Never</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn — Never Never.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn - Right Now</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn - Right Now.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn - Somebody Someone</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn - Somebody Someone.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Korn — Word Up!</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/korn/Korn — Word Up!.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

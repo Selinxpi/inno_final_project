@@ -1,4 +1,163 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Slipknot</h1>
-{% endblock %}
+    <h1 class="bands_name">SLIPKNOT</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/slipknot.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                Slipknot is an American heavy metal band formed in Des Moines, Iowa, in 1995 by percussionist Shawn Crahan, drummer Joey Jordison and bassist Paul Gray. 
+                After several lineup changes in its early years, the band settled on nine members for more than a decade: Crahan, Jordison,
+                Gray, Craig Jones, Mick Thomson, Corey Taylor, Sid Wilson, Chris Fehn, and Jim Root. Gray died on May 24, 2010, and was replaced during 2011–2014 by guitarist Donnie Steele. 
+                Jordison was dismissed from the band on December 12, 2013. 
+                Steele left during the recording sessions for .5: The Gray Chapter. 
+                The band found replacements in Alessandro Venturella on bass and Jay Weinberg on drums. After the departure of Jordison, 
+                as of December 2013 the only founding member in the current lineup is percussionist Crahan. Fehn was also dismissed from the band in March 2019 prior to the writing of We Are Not Your Kind.
+                Slipknot is well known for its attention-grabbing image, aggressive style of music, and energetic and chaotic live shows.The band rapidly rose to fame following the release of their eponymous debut album in 1999. 
+                The 2001 follow-up album, Iowa, although darker in tone, made the band more popular. 
+                After a brief hiatus, Slipknot returned in 2004 with Vol. 3: (The Subliminal Verses), before going on another hiatus and returning in 2008 with its fourth album, All Hope Is Gone, which debuted at number one on the Billboard 200 chart. 
+                After another long hiatus, Slipknot released its fifth studio album, .5: The Gray Chapter, in 2014. Their sixth studio album, We Are Not Your Kind, was released on August 9, 2019.[3] The band has released two live albums titled 9.0: Live and Day of the Gusano: Live in Mexico, a compilation album titled Antennas to Hell, and five live DVDs. 
+                The band has sold 30 million records worldwide.</p>
+            <div class="web_button">
+                <a href="https://slipknot1.com/" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/corey.gif') }}" alt="Corey Taylor" title="Corey Taylor">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Corey Taylor</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Corey_Taylor" target="_blank" alt="corey"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Corey"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/shawn.jpg') }}" alt="Shawn" title="Shawn">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Shawn Crahan</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Shawn_Crahan" target="_blank" alt="shawn"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Shawn"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/craig.jpg') }}" alt="Craig" title="Craig">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Craig Jones</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Craig_Jones_(musician)" target="_blank" alt="craig"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Craig"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/Mick.jpg') }}" alt="Mick" title="Mick">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Mick Thomson</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Mick_Thomson" target="_blank" alt="mick"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Mick"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/sid.jpg') }}" alt="Sid" title="Sid">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Sid Wilson</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Sid_Wilson" target="_blank" alt="sid"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Sid"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/jim.jpg') }}" alt="jim" title="jim">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Jim Root</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Jim_Root" target="_blank" alt="jim"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="jim"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/ales.jpg') }}" alt="Alessandro" title="Alessandro">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Alessandro Venturella</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Alessandro_Venturella" target="_blank" alt="al"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Alessandro"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/jay.jpg') }}" alt="Jay" title="Jay">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Jay Weinberg</p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Jay_Weinberg" target="_blank" alt="Jay"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Jay"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Slipknot-Killpop</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/slipknot-killpop.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Slipknot — Before I Forget</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/Slipknot — Before I Forget.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Slipknot - Dead Memories</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/Slipknot – Dead Memories.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Slipknot — Psychosocial</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/Slipknot — Psychosocial.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Slipknot — Wait and Bleed</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/Slipknot — Wait and Bleed.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>slipknot_-_vermilion</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/slipknot_-_vermilion.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Slipknot - Duality</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/slipknot/Slipknot - Duality.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

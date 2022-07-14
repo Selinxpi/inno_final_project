@@ -1,4 +1,134 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Trivium</h1>
-{% endblock %}
+    <h1 class="bands_name">Trivium</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/Tivium.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                Trivium is an American heavy metal band from Orlando, Florida, formed in 1999. The band comprises vocalist and guitarist Matt Heafy, guitarist Corey Beaulieu, bassist Paolo Gregoletto, and drummer Alex Bent.
+                The band's debut album Ember to Inferno was their only album released through Lifeforce Records in 2003. In 2004, they were signed to Roadrunner Records where they have stayed ever since. 
+                The band has released ten studio albums and over twenty singles to date. Their tenth studio album, In the Court of the Dragon, was released on October 8, 2021. 
+                The band has sold over one million albums worldwide and was nominated for a Grammy for the song "Betrayer" at the 61st Annual Grammy Awards in 2019 for Best Metal Performance. 
+            </p>
+            <div class="web_button">
+                <a href="https://www.trivium.org/" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/matt.jpg') }}" alt="Matt Heafy" title="Matt Heafy">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Matt Heafy</p>
+                <p class="p-bands">
+                    Matthew Kiichi Heafy (born January 26, 1986) is an American musician, 
+                    best known as the guitarist and lead vocalist for heavy metal band Trivium.
+                    He was also the lead vocalist for the band Capharnaum, along with Trivium's former producer Jason Suecof. 
+                    In 2017, Heafy was voted sixth on the Ultimate Guitar list "Top 25 Greatest Modern Frontmen".
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Matt_Heafy" target="_blank" alt="Matt Heafy"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Matt Heafy"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/cor.jpg') }}" alt="Corey" title="Corey">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Corey Beaulieu</p>
+                <p class="p-bands">
+                    Corey King Beaulieu (born November 22, 1983) is the guitarist of American heavy metal band Trivium.
+                    At live shows, he also performs backing and, sometimes, lead screaming vocals. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Corey_Beaulieu" target="_blank" alt="Corey"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Corey"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/paolo.jpg') }}" alt="Paolo" title="Paolo">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Paolo Gregoletto</p>
+                <p class="p-bands">
+                    Paolo Francesco Gregoletto (born September 14, 1985) is an American musician and songwriter who is best known as the bassist of the heavy metal band Trivium. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Paolo_Gregoletto" target="_blank" alt="Paolo"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Paolo"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/alex.png') }}" alt="Alex" title="Alex">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Alex Bent</p>
+                <p class="p-bands">
+                    Alex Bent (born January 31, 1993) is an American musician best known as the drummer for heavy metal bands Trivium, Arkaik and Dragonlord.
+                    Bent is a former drummer for Battlecross and Brain Drill.
+                    Bent has also toured with Decrepit Birth and Testament.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Alex_Bent" target="_blank" alt="Alex"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Alex"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Trivium — Like Light To The Flies</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/Trivium — Like Light To The Flies.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium — Vengeance Falls</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/Trivium — Vengeance Falls.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium — Washing Away Me In The Tides</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/Trivium — Washing Away Me In The Tides.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium - Down From The Sky</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/trivium-down-from-the-sky.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium — Built To Fall</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/trivium-built-to-fall.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium — In Waves</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/trivium-in-waves.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Trivium — Silence In The Snow</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/trivium/trivium-silence-in-the-snow.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

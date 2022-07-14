@@ -9,7 +9,7 @@
     <title>Metal-Bands-Events</title>
 </head>
 <body onload="darkCheck(),checkCookies()">
-    <header>
+    <header id="header">
         <div class = "header">
             <img  class = "logo" src="{{ url_for('static', filename='img/snake-skull.gif') }}" alt="logo" title="LOGO1">
             <img  class = "logo1" src="{{ url_for('static', filename='img/co_uk3.gif') }}" alt="logo1" title="Bigest-Metal-Events.co.uk">
@@ -46,7 +46,7 @@
             </div>
             <div class="column">
                 <a href="{{ url_for('my_view.slipknot')}}">Slipknot</a>
-                <a href="{{ url_for('my_view.rhcp')}}">RHCP</a>
+                <a href="{{ url_for('my_view.rhcp')}}">Red Hot Chili Peppers</a>
                 <a href="{{ url_for('my_view.korn')}}">KoЯn</a>
                 <a href="{{ url_for('my_view.ville')}}">Ville Valo (HIM)</a>
                 <a href="{{ url_for('my_view.trivium')}}">Trivium</a>
@@ -63,6 +63,9 @@
     </div>
     {% block content %}
     {% endblock %}
+    <div class="top">
+        <a href="#header"><button class="event-buttons">Top</button></a>
+    </div>
     <footer class="footer">
         <img  class = "bands" src="{{ url_for('static', filename='img/footer.png') }}" alt="bands" title="bands photo">
         <div class="footer-text">

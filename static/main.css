@@ -270,7 +270,7 @@ body{
 .event-buttons:active,.but:active,.contact-buttons:active{
         box-shadow: 0 0.2em ;
         transform: translateY(4px);
-    }
+}
 .band_buttons{
     display: flex;
     justify-content: center;
@@ -431,4 +431,44 @@ h5{
     margin-top: 2em;
     font-size: 1em;
     margin-bottom: 0.5em;
+}
+.cerey-foto{
+    width: 12em;
+    border-radius: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border:solid grey 0.2em;
+}
+.ville-foto{
+    width: 10em;
+    border-radius: 3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border:solid rgb(1, 1, 1) 0.2em;
+}
+/* 404 */
+.error_button{
+    width: 9em;
+    height: 4em;
+    margin-left: 5em;
+    margin-top: 5em;
+    border-radius: 1em;
+    background: linear-gradient(90deg,#363637,#9ea2a9,#929498,#49494a);
+    box-shadow: 0 1em 0.5em rgba(37, 37, 39, 0.725);
+    cursor: pointer;
+    transition-duration: 0.1s;
+    }
+.error_button:hover{
+    background: linear-gradient(90deg,#defb3bdc,#ebf395,#73f7bc,#298f54c5);
+    }
+.error_button:active{
+        box-shadow: 0 0.2em ;
+        transform: translateY(4px);
+}
+/* top button */
+.top{
+    text-align: center;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 2em;
 }

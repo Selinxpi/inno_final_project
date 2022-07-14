@@ -1,4 +1,81 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Corey Taylor</h1>
-{% endblock %}
+    <h1 class="bands_name">Corey Taylor</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/corey1.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "cerey-foto" src="{{ url_for('static', filename='img/corey.gif') }}" alt="Corey Taylor" title="Corey Taylor">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Corey Taylor</p>
+                <p class="p-bands">
+                    Corey Todd Taylor (born December 8, 1973) is an American singer, musician, songwriter and actor. 
+                    He is known as the lead vocalist and lyricist of the bands Slipknot and Stone Sour.
+                    Taylor co-founded Stone Sour with drummer Joel Ekman in 1992, 
+                    playing in the Des Moines area, and working on a demo. He joined Slipknot in 1997 to replace their original vocalist Anders Colsefni and has subsequently released six studio albums with them. 
+                    After the first two Slipknot albums went Platinum, Taylor revived Stone Sour to record an album and tour in 2002. His debut solo studio album, CMFT, was released on October 2, 2020, by Roadrunner Records.
+                    He has worked with several bands, including Junk Beer Kidnap Band, Korn, Disturbed, Apocalyptica, Code Orange, Anthrax, Steel Panther, Tonight Alive, Falling in Reverse, and Soulfly. 
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Corey_Taylor" target="_blank" alt="corey"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Corey"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Corey Taylor - Everybody Dies On My Birthday</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor_-_everybody-dies-on-my-birthday.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - Snuff</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/Corey Taylor - Snuff.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - Black Eyes Blue</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor-black-eyes-blue.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - Bother</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor-bother.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - Fuck You</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor-fuck-you.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - Im not Jesus</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor-im-not-jesus.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Corey Taylor - London Calling</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/corey/corey-taylor-london-calling.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

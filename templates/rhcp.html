@@ -1,4 +1,162 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>RHCP</h1>
-{% endblock %}
+    <h1 class="bands_name">Red Hot Chili Peppers</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/RHCP.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <p class="p-bands">
+                The Red Hot Chili Peppers are an American rock band formed in Los Angeles in 1983. 
+                Their music incorporates elements of alternative rock, funk, punk rock, hard rock, hip hop, and psychedelic rock. 
+                Their eclectic range has influenced genres such as funk metal, rap metal, rap rock and nu metal.
+                The band consists of co-founders Anthony Kiedis (lead vocals), Flea (bass), drummer Chad Smith and guitarist John Frusciante. 
+                With over 100 million records sold worldwide, the Red Hot Chili Peppers are one of the best-selling bands of all time. 
+                They are the most successful band in the history of alternative rock, with the records for most number-one singles (14), most cumulative weeks at number one (85) and most top-ten songs (25) on the Billboard Alternative Songs chart.
+                They have won six Grammy Awards, were inducted into the Rock and Roll Hall of Fame in 2012, and in 2022 received a star on the Hollywood Walk of Fame. </p>
+            <div class="web_button">
+                <a href="https://redhotchilipeppers.com" target="_blank" alt="web"><button class="buy">Official Website</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/anth.png') }}" alt="Anthony" title="Anthony">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Anthony Kiedis</p>
+                <p class="p-bands">
+                    Anthony Kiedis (born November 1, 1962) is an American singer and songwriter. 
+                    He is a founding member and lead vocalist of the rock band Red Hot Chili Peppers. 
+                    Kiedis and his fellow band members were inducted into the Rock and Roll Hall of Fame in 2012. 
+                    Kiedis' lyrical style has evolved throughout his career; early recordings discussed topics such as sex and life in Los Angeles, 
+                    while more recent songs focus on more reflective themes including love, addiction, and loss. 
+                    He struggled with addiction until 2000, and maintains that he has been clean since then. 
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Anthony_Kiedis" target="_blank" alt="Anthony"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Anthony"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/flea.png') }}" alt="Flea" title="Flea">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Flea</p>
+                <p class="p-bands">
+                    Michael Peter Balzary (born 16 October 1962), known professionally as Flea, is an Australian-born American musician and actor. 
+                    He is a founding member and bassist of the rock band Red Hot Chili Peppers.
+                    Flea was born in Melbourne, Victoria; his family moved to Rye, New York, when he was four. 
+                    After his parents divorced, Flea spent his childhood in America and Australia, before settling in California. 
+                    At high school, he befriended singer Anthony Kiedis, with whom he formed the Red Hot Chili Peppers in 1983. 
+                    Flea is also member of the supergroups Atoms for Peace, Antemasque, Pigface, and Rocket Juice & the Moon, 
+                    and has played with acts including the Mars Volta, Johnny Cash, Tom Waits, Alanis Morissette, Young MC, Nirvana, What Is This?, Fear, and Jane's Addiction. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Flea_(musician)" target="_blank" alt="Flea"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Flea"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/chad.png') }}" alt="Chad" title="Chad">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Chad Smith</p>
+                <p class="p-bands">
+                    Chad Gaylord Smith (born October 25, 1961) is an American musician who has been the drummer of the band Red Hot Chili Peppers since 1988. 
+                    The group was inducted into the Rock and Roll Hall of Fame in 2012. Smith is also the drummer of the hard rock supergroup Chickenfoot, formed in 2008, and of the all-instrumental outfit Chad Smith's Bombastic Meatbats, formed in 2007. 
+                    He worked with The Chicks on Taking the Long Way, an album that won 5 Grammy Awards in 2007.
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Chad_Smith" target="_blank" alt="Chad"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Chad"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+            <div class="band">
+                <img  class = "member-foto" src="{{ url_for('static', filename='img/johnrhcp.jpg') }}" alt="John" title="John">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">John Frusciante</p>
+                <p class="p-bands">
+                    John Anthony Frusciante (born March 5, 1970) is an American musician, singer and songwriter, 
+                    best known as the guitarist for the Red Hot Chili Peppers. 
+                    He has released 11 solo albums and 7 EPs, ranging in style from acoustic guitar music to electronic music.
+                    Frusciante is widely regarded as one of the greatest guitarists of all time. He was named among the greats by Rolling Stone and Gibson, as well as in a BBC poll. 
+                    He was inducted into the Rock and Roll Hall of Fame as a member of the Red Hot Chili Peppers in 2012. 
+                </p>
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/John_Frusciante" target="_blank" alt="John"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="John"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Red Hot Chili Peppers — Around The World</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Around The World.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — By The Way</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — By The Way.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Californication</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Californication.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Can't Stop</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Cant Stop.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Don't Forget Me</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Dont Forget Me.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Hey</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Hey.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — I Could Have Lied</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — I Could Have Lied.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Otherside</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Otherside.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Snow (Hey Oh)</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Snow (Hey Oh).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Red Hot Chili Peppers — Under The Bridge</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/rhcp/Red Hot Chili Peppers — Under The Bridge.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}

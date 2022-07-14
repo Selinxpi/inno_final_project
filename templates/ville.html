@@ -1,4 +1,84 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Ville</h1>
-{% endblock %}
+    <h1 class="bands_name">Ville Valo</h1>
+<div class="band">
+    <img  class = "logo-band" src="{{ url_for('static', filename='img/ville.jpg') }}" alt="logo" title="LOGO1">
+</div>
+<div class="web_button">
+    <button class="event-buttons" onclick="myFunction()">History</button>
+</div>
+<article id="divBea">
+    <div class="history"> 
+        <div class="box box_history">
+            <h4>Members</h4>
+            <div class="band">
+                <img  class = "ville-foto" src="{{ url_for('static', filename='img/villegif.gif') }}" alt="Ville" title="Ville">
+            </div>
+            <div class="member-p">
+                <p class="p-bands">Ville Valo</p>
+                <p class="p-bands">
+                    Ville Hermanni Valo (pronounced born 22 November 1976) is a Finnish singer, songwriter and musician. 
+                    He is best known as the lead vocalist of the gothic rock band HIM.
+                    Born and raised in Helsinki to a Hungarian mother and Finnish father, Valo began his career playing bass and drums in various bands around the city. 
+                    In 1991, he co-founded and became the lead singer and main songwriter of HIM, which would go on to become one of the 
+                    most successful Finnish bands of all time and the first to receive a gold record in the United States. 
+                    Outside of HIM, Valo has collaborated with various other bands and artists during his career, including Agents, The 69 Eyes, and Apocalyptica. 
+                    In 2020, Valo embarked on a solo career under the moniker VV.
+                    Known for his deep, crooning, baritone voice, Valo was found to possess the eighth-highest vocal range of any known singer in popular music by VVN Music. 
+                    He is also the creator of the heartagram, HIM's trademarked symbol, which has achieved great popularity outside of the band's fanbase. Valo has received several accolades in the music industry and has been regarded as a sex symbol by several publications. 
+                </p>  
+                <div class="web_button">
+                    <a href="https://en.wikipedia.org/wiki/Ville_Valo" target="_blank" alt="Ville"><img class="wikipedia"src="{{ url_for('static', filename='img/wikipedia.png') }}" alt="Ville"></a>
+                </div>
+                <p class="wiki-text">&#8679 WikipediA &#8679</p>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="b-b">
+    <div class="web_button">
+        <button class="event-buttons" onclick="myFunction2()">Audio</button>
+    </div>
+</div>
+<article id="hide_2">
+    <div class="div_video">
+        <div class="audio">
+            <h5>Ville Valo feat Apocalyptica and Lauri Ylonen - Bittersweet</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/apocalyptica-bittersweet-feat-ville-valo-and-lauri-ylonen.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>HIM - And Love Said No</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/h-i-m-and-love-said-no.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>HIM - In Joy And Sorrow</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/h-i-m-in-joy-and-sorrow.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>HIM - Killing Loneliness</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/h-i-m-killing-loneliness.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>HIM - Wicked Game</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/h-i-m-wicked-game-chris-isaak-cover.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>HIM - Your Sweet Six Six Six</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/h-i-m-your-sweet-six-six-six.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <h5>Ville Valo - Summer Wine</h5>
+            <audio controls>
+                <source src="{{ url_for('static', filename='mp3/valo/ville-valo-summer-wine.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</article>
+    {% endblock %}
