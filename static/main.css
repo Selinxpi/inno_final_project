@@ -10,7 +10,27 @@ body{
 {
     display:none;
 }
-@media(orientation:landscape){
+/* @media(orientation:landscape){
+    .logo,.logo1,.logo2{
+        display: inline-block;    
+        width: 13em;
+        height: 13em;
+        border-radius: 10em;
+        margin-left: 5em;
+        margin-top: 1em;
+}
+    .bands{
+        display: inline-block;
+        border-top: double rgb(72, 71, 71) 0.5em;
+        border-bottom: double rgb(72, 71, 71) 0.5em;
+        height: 15em;
+        width: 100%;
+}
+    .dark_button{
+        display: inline-block;
+    }
+} */
+@media (min-width: 900px) {
     .logo,.logo1,.logo2{
         display: inline-block;    
         width: 13em;
@@ -30,8 +50,27 @@ body{
         display: inline-block;
     }
 }
-
 @media (orientation: portrait) {
+    .logo3{
+        display: inline-block;
+        justify-content: center;
+        width: 18em;
+        margin-top: 2em;
+    }
+    .text_bme{
+        display: flex;
+    }
+    .bme_co_uk{
+        display: flex;
+        justify-content: center;
+    }
+    .dark_mode_mob{
+        display: inline-block;
+        margin-left: 2em;
+        margin-top: 0.5em;
+    }
+}
+@media (min-width: 600px) {
     .logo3{
         display: inline-block;
         justify-content: center;
@@ -73,7 +112,6 @@ body{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    /* margin-bottom: 2em; */
     margin-top: 1em;
 }
 .logo{
@@ -97,6 +135,7 @@ body{
     border-bottom: double rgb(72, 71, 71) 0.5em;
     background-color: black;
 }
+
 /* DarkMode */
 .dark-mode{
     background:url('img/dark.jpg');
@@ -197,7 +236,7 @@ body{
     width: 33.33%;
     padding: 10px;
     background-color: rgba(65, 62, 62, 0.8);
-    height: 250px;
+    height: 20em;
 }
 .column a {
     float: none;
