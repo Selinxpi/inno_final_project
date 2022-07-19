@@ -281,7 +281,7 @@ body{
 .event-buttons, .buy, .no_content{
     width: 7em;
     height: 3em;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     margin-top: 3em;
     border-radius: 1em;
     background: linear-gradient(90deg,#363637,#9ea2a9,#929498,#49494a);
@@ -423,12 +423,10 @@ h4{
 .web_button{
     display: flex;
     justify-content: center;
-    margin-right: 2em;
 }
 .wikipedia{
     width: 3em;
     margin-top: 1em;
-    margin-left: 1.5em;
 }
 .wiki-text{
     font-size: 0.7em;
@@ -492,7 +490,8 @@ h5{
 }
 /* top button */
 .top{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 4em;
     margin-bottom: 2em;
 }
